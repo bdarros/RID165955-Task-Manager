@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <main>        
+        <h1>Board de Tarefas</h1>
+        <section id="'create-todo-section">
+            <form id="create-todo-form">
+                <input  
+                    type="text" 
+                    id="description" 
+                    name="description" 
+                    class="input-description"
+                    aria-label=" Nome da tarefa"
+                    placeholder=" Nome da tarefa"
+                />
+                <input 
+                    type="text" 
+                    id="label" 
+                    name="label" 
+                    class="input-description"
+                    placeholder=" Etiqueta" />
+                <button type="submit" id="save-task" aria-label="Cadastrar Tarefa" class="add-task-btn">+</button>                            
+            </form>
+        </section>
+        <section class="todo-list-section">
+            <ul id="todo-list"></ul>
+        </section>
+         
+        <footer>
+            <div id="completed-count"></div>
+            <button onclick="removeDoneTasks()" class="remove-done-tasks-btn">
+                Remover Tarefas Concluidas
+            </button>
+        </footer>
+    </main>   
+</body>
+</html>
